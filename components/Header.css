@@ -1,0 +1,14 @@
+.Header{
+    background: #f6f797;
+    height: 80px;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.Header__img{
+        width: 110px;
+        height: 110px;
+        align-items: center;
+        border-radius: 30px;
+}

@@ -1,0 +1,10 @@
+.Settings {
+    gap:30px;
+    padding:40px
+}
+.Settings__img{
+    width: 110px;
+    height: 110px;
+    align-items: center;
+    border-radius: 30px;
+}

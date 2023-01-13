@@ -1,0 +1,32 @@
+.Feedback {
+    background-color: rgba(0, 0, 0, .7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.Feedback__box {
+    width: 220px;
+    height: 150px;
+    border: 1px solid rgb(166,172,177);
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.Feedback--error > .Feedback__box {
+    background-color: red;
+}
+
+.Feedback--warning > .Feedback__box {
+    background-color: orange;
+}
+
+.Feedback--success > .Feedback__box {
+    background-color: green;
+}
+
+.Feedback--info > .Feedback__box {
+    background-color: dodgerblue;
+}

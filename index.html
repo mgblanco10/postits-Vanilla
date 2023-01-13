@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+        <!-- <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script> -->
+    
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone@7.18.12/babel.js"></script>
+    
+    <title>react</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./components/Header.css">
+    <link rel="stylesheet" href="./components/Info.css">
+    <link rel="stylesheet" href="./components/Menu.css">
+    <link rel="stylesheet" href="./components/NoteList.css">
+    <link rel="stylesheet" href="./components/Feedback.css">
+    <link rel="stylesheet" href="./components/Settings.css">
+</head>
+<body>
+    <div id="root" class="container container--full"></div>
+
+</body>
+
+<!-- commons / utils -->
+<script src="./utils/loggito.js"></script>
+
+<!--business layer -->
+<script src="./logic/constants.js"></script>
+<script src="./logic/authenticateUser.js"></script>
+<script src="./logic/retrieveUser.js"></script>
+<script src="./logic/registerUser.js"></script>
+<script src="./logic/retrieveNotes.js"></script>
+<script src="./logic/createNote.js"></script>
+<script src="./logic/updateNote.js"></script>
+<script src="./logic/deleteNote.js"></script>
+<script src="./logic/UpdateUserPassword.js"></script>
+
+
+<!----------Presentation-->
+<script src="./components/Feedback.jsx" type="text/babel"></script>
+<script src="./components/Info.jsx" type="text/babel"></script>
+<script src="./components/IconButton.jsx" type="text/babel"></script>
+<script src="./components/Menu.jsx" type="text/babel"></script>
+<script src="./components/Header.jsx" type="text/babel"></script>
+<script src="./components/NoteList.jsx" type="text/babel"></script>
+<script src="./components/Settings.jsx" type="text/babel"></script>
+
+<!---------Pages-->
+<script src="./pages/RegisterPage.jsx" type="text/babel"></script>
+<script src="./pages/LoginPage.jsx" type="text/babel"></script>
+<script src="./pages/HomePage.jsx" type="text/babel"></script>
+
+
+<!-- presentation layer  -->
+<script src="App.jsx" type="text/babel"></script>
+<script src="index.jsx" type="text/babel"></script>
+
+</html>
