@@ -13,18 +13,24 @@ function registerUser(name,email,password,callback) {
 
     if (typeof callback !== 'function') throw new TypeError('Callback is not a function')
     
-    const xhr = new XMLHttpRequest
+    const xhr = new XMLHttpRequest()
 
-    xhr.onload = function (){
-        const status = xhr.status
-
-        if(status >= 500)
-            callback (new Error (`server error (${status})`))
-        else if (status >= 400)
-             callback (new Error (`client error (${status})`))
-        else if (status === 201)
-            callback(null)
-    }
+    //response
+    xhr.onload = function () {
+        const status = xhr.status;
+    
+        console.log(status);
+    
+        if (status >= 500) callback(new Error(`server error(${status})`));
+        else if (status >= 400) callback(new Error(`client error(${status})`));
+        else if (status === 201) callback(null);
+      };
+    
+      xhr.onerror = function () {
+        console.log("API CALL ERROR");
+      };
+    
+      // XMLHttprequest
     xhr.open ('POST', 'https://b00tc4mp.herokuapp.com/api/v2/users')
     
     xhr.setRequestHeader('Content-type', 'application/json')

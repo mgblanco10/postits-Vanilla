@@ -17,7 +17,7 @@ function HomePage({onLogoutClick, onFeedback}){
 
                     logger.warn(error.message)
 
-                    onLogoutClick()
+                    // onLogoutClick()
 
                     return
                 }
