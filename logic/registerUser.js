@@ -35,6 +35,6 @@ function registerUser(name,email,password,callback) {
     
     xhr.setRequestHeader('Content-type', 'application/json')
     
-    xhr.send(`{"name":"${name}","username":"${email}", "password":"${password}"}`)
+    xhr.send(`{ "name": "${name}", "email": "${email}", "password": "${password}" }`)
 
 }

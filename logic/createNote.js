@@ -43,7 +43,6 @@ function createNote(token, callback) {
             }
 
             xhr2.open('PATCH', 'https://b00tc4mp.herokuapp.com/api/v2/users')
-
             xhr2.setRequestHeader('Authorization', `Bearer ${token}`)
             xhr2.setRequestHeader('Content-type', 'application/json')
 
